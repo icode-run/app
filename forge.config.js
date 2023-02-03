@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'ucdbook',
+          name: 'icode-app',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
