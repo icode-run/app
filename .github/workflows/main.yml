@@ -83,14 +83,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # WINDOWS_CODESIGN_FILE: ${{ steps.write_file.outputs.filePath }}
           # WINDOWS_CODESIGN_PASSWORD: ${{ secrets.WINDOWS_CODESIGN_PASSWORD }}
-      - name: ls dir
-        run: ls
-      - name: cd ./out
-        run: cd ./out
-      - name: ls
-        run: ls
-      - name: cd ../
-        run: cd ../
       # - name: Archive production artifacts
       #   uses: actions/upload-artifact@v2
       #   with:
