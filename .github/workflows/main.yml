@@ -25,7 +25,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14.x
-          cache: yarn
+          cache: yarn,
+          cache-dependency-path: './server/yarn.json'
   build:
     needs: test
     name: Build (${{ matrix.os }} - ${{ matrix.arch }})
