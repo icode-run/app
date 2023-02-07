@@ -83,7 +83,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # WINDOWS_CODESIGN_FILE: ${{ steps.write_file.outputs.filePath }}
           # WINDOWS_CODESIGN_PASSWORD: ${{ secrets.WINDOWS_CODESIGN_PASSWORD }}
-      - name: cd out
+      - name: ls dir
+        run: ls
+      - name: cd ./out
         run: cd ./out
       - name: ls
         run: ls
