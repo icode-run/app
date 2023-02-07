@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
+          cache-dependency-path: ./frontend/yarn.lock
       - name: Install
         run: yarn --frozen-lockfile --network-timeout 100000 || yarn --frozen-lockfile --network-timeout 100000 || yarn --frozen-lockfile --network-timeout 100000
       - name: Create fake contributors
