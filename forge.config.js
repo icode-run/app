@@ -1,4 +1,7 @@
 process.env.GITHUB_TOKEN = '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';
+const packageJson = require('./package.json');
+const { version } = packageJson;
+
 module.exports = {
   packagerConfig: {
     icon: './assets/icon/icon' // no file extension required
@@ -7,20 +10,20 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {
-        // An URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features).
-        iconUrl: 'https://raw.githubusercontent.com/electron/fiddle/0119f0ce697f5ff7dec4fe51f17620c78cfd488b/assets/icons/fiddle.ico',
-        // The ICO file to use as the icon for the generated Setup.exe
-        setupIcon: './assets/icon/icon.ico',
-
-
+      platforms: ['win32'],
+      config: (arch) => ({
         name: 'icode-run',
         authors: 'tianyanrong',
-        // exe: 'electron-fiddle.exe',
+        exe: 'icode-run.exe',
+        iconUrl:
+          'https://raw.githubusercontent.com/electron/fiddle/0119f0ce697f5ff7dec4fe51f17620c78cfd488b/assets/icons/fiddle.ico',
         // loadingGif: './assets/loading.gif',
         noMsi: true,
-        // setupExe: `electron-fiddle-${version}-win32-${arch}-setup.exe`,
-      },
+        setupExe: `icode-run-${version}-win32-${arch}-setup.exe`,
+        setupIcon: './assets/icon/icon.ico',
+        // certificateFile: process.env['WINDOWS_CODESIGN_FILE'],
+        // certificatePassword: process.env['WINDOWS_CODESIGN_PASSWORD'],
+      }),
     },
     {
       name: '@electron-forge/maker-zip',
