@@ -1,6 +1,6 @@
 # icode-run
 
-## Electron打包
+## 打包和发布
 
 通过Github仓库标记tag，触发action进行自动打包。(支持mac、window系统的版本)
 
@@ -8,9 +8,9 @@
 
 **一、项目中配置**
 
-GitHub Action配置文件： .github/workflows/main.yml
-
 Electron打包配置文件：forge.config.js
+
+GitHub Action配置文件(执行打包与发布)： .github/workflows/main.yml
 
 **二、github线上配置**
 

@@ -1,4 +1,3 @@
-process.env.GITHUB_TOKEN = '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';
 const packageJson = require('./package.json');
 const { version } = packageJson;
 
