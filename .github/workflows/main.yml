@@ -2,8 +2,8 @@ name: Build & Release
 
 on:
   push:
-    branches:
-      - master
+    # branches:
+    #   - master
     tags:
       - v*
   pull_request:
@@ -73,7 +73,7 @@ jobs:
       #     fileName: 'win-certificate.pfx'
       #     encodedString: ${{ secrets.WINDOWS_CODESIGN_P12 }}
       - name: Install
-        run: yarn --network-timeout 100000 || yarn --network-timeout 100000 || yarn --network-timeout 100000
+        run: yarn
       - name: Make
         if: startsWith(github.ref, 'refs/tags/')
         run: yarn make --arch=${{ matrix.arch }}
