@@ -12,7 +12,7 @@ const createWindow = () => {
   })
 
   // 加载 index.html
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('./dist/index.html');
 
   // 打开开发工具
   // mainWindow.webContents.openDevTools()

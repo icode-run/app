@@ -1,5 +1,5 @@
 {
-  "name": "icode-electron-app",
+  "name": "icode-run",
   "version": "0.0.1",
   "description": "icode electron app",
   "main": "index.js",
@@ -16,14 +16,14 @@
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
-    "@electron-forge/maker-deb": "^6.0.4",
-    "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
     "@electron-forge/publisher-github": "^6.0.4",
+    "@electron-forge/maker-dmg": "^6.0.5",
+    "electron-squirrel-startup": "^1.0.0",
     "electron": "^22.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    
   }
 }
