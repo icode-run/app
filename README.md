@@ -21,7 +21,11 @@ Electron打包配置文件：forge.config.js
 ### 发布操作
 
 ```
-git push origin master --tags
+// 新建tab
+git tag v1.1.0
+
+// tag同步到远程服务器
+git push origin v1.1.0
 ```
 
 

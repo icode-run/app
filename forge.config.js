@@ -12,6 +12,14 @@ module.exports = {
         iconUrl: './assets/icon/icon.ico',
         // The ICO file to use as the icon for the generated Setup.exe
         setupIcon: './assets/icon/icon.ico',
+
+
+        name: 'icode-run',
+        authors: 'tianyanrong',
+        // exe: 'electron-fiddle.exe',
+        // loadingGif: './assets/loading.gif',
+        noMsi: true,
+        // setupExe: `electron-fiddle-${version}-win32-${arch}-setup.exe`,
       },
     },
     {
