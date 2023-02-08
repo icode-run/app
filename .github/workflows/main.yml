@@ -39,6 +39,7 @@ jobs:
         include:
         - os: windows-latest
           arch: ia32
+        exclude:
         - os: windows-latest
           arch: arm64
 
