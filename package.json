@@ -1,6 +1,6 @@
 {
   "name": "icode-run",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "icode electron app",
   "main": "index.js",
   "scripts": {
