@@ -9,7 +9,7 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         // An URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features).
-        iconUrl: './assets/icon/icon.ico',
+        iconUrl: 'https://raw.githubusercontent.com/electron/fiddle/0119f0ce697f5ff7dec4fe51f17620c78cfd488b/assets/icons/fiddle.ico',
         // The ICO file to use as the icon for the generated Setup.exe
         setupIcon: './assets/icon/icon.ico',
 
