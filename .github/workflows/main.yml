@@ -88,6 +88,9 @@ jobs:
       #   with:
       #     name: ${{ matrix.os }}
       #     path: out/make/**/*
+      # out/**/*.nupkg
+      #       out/**/*setup*.exe
+      #       out/**/RELEASES
       - name: Release
         uses: softprops/action-gh-release@v1
         # if: startsWith(github.ref, 'refs/tags/')
@@ -97,7 +100,5 @@ jobs:
           draft: true
           files: |
             out/**/*.dmg
-            out/**/*setup*.exe
-            out/**/*.nupkg
             out/**/*.zip
-            out/**/RELEASES
+            
