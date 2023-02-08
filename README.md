@@ -6,13 +6,13 @@
 
 ### 打包前配置
 
-**项目中配置**
+**一、项目中配置**
 
 GitHub Action配置文件： .github/workflows/main.yml
 
 Electron打包配置文件：forge.config.js
 
-**github线上配置**
+**二、github线上配置**
 
 1. GitHub申请token
    具体操作可参照：https://zhuanlan.zhihu.com/p/547242908
